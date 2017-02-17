@@ -21,17 +21,13 @@ public class InventoryTracker {
     }
 
     static void changeQuantity(int key, int quantity){
-        //String name = Inventory.inventory.get(key).name;
-        //Item item = new Item(name, quantity);
-       // Inventory.inventory.set(key, item);
         Item item = Inventory.inventory.get(key);
         item.quantity = quantity;
     }
 
     static void changeName(int key, String name){
-        int quantity = Inventory.inventory.get(key).quantity;
-        Item item = new Item(name, quantity);
-        Inventory.inventory.set(key, item);
+        Item item = Inventory.inventory.get(key);
+        item.name = name;
     }
 
 

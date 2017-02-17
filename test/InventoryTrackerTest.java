@@ -38,7 +38,7 @@ public class InventoryTrackerTest {
 
         InventoryTracker.changeQuantity(Inventory.inventory.indexOf(item), 3);
 
-        assertTrue();
+        assertTrue( Inventory.inventory.get(Inventory.inventory.indexOf(item)).quantity == 3 );
 
 
     }
