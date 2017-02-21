@@ -5,5 +5,4 @@ public class Inventory {
 
     static ArrayList<Item> inventory = new ArrayList<>();
 
-
 }

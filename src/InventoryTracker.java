@@ -4,9 +4,13 @@ import java.util.Scanner;
 
 public class InventoryTracker {
 
+    public static void main(String[] args) {
+
+
+    }
+
     static HashMap<String, User> userDatabase = new HashMap();
     static Scanner scanner = new Scanner(System.in);
-
 
     static boolean verifyUser(User user){
         return (userDatabase.get(user.name).equals(user));
@@ -28,12 +32,5 @@ public class InventoryTracker {
     static void changeName(int key, String name){
         Item item = Inventory.inventory.get(key);
         item.name = name;
-    }
-
-
-
-    public static void main(String[] args) {
-
-
     }
 }

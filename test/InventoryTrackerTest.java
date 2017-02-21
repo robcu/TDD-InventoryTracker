@@ -39,7 +39,15 @@ public class InventoryTrackerTest {
         InventoryTracker.changeQuantity(Inventory.inventory.indexOf(item), 3);
 
         assertTrue( Inventory.inventory.get(Inventory.inventory.indexOf(item)).quantity == 3 );
+    }
 
+    @Test
+    public void changeName_isNameChanged(){
+        Item item = new Item("testItem", 2);
+        InventoryTracker.addItem(item);
 
+        InventoryTracker.changeName(Inventory.inventory.indexOf(item), "testName");
+
+        assertTrue(Inventory.inventory.get(Inventory.inventory.indexOf(item)).name.contentEquals("testName"));
     }
 }
