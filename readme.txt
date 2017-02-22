@@ -1,0 +1,1 @@
+This project was an exercise in TDD. I wrote user stories for an existing program, used them to write tests and corresponding methods, and then started to flesh out the program with user inputs, etc. The program runs as intended now but the tests are irrelevant.
